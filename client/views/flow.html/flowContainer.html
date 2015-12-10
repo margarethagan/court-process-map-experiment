@@ -1,0 +1,27 @@
+<template name="flowContainer">
+  <h4>Court Process Flow </h4>
+  <div class="row">
+      <div class="col s12">
+        <ul class="tabs z-depth-1">
+          <li class="tab col s3">
+            <a class="center active" href="#stg1">Pleading </a>
+          </li>
+          <li class="tab col s3"><a class="center" href="#stg2">Discovery</a></li>
+          <li class="tab col s3"><a class="center" href="#stg3">Pre-Trial</a></li>
+          <li class="tab col s3"><a class="center" href="#stg4">Post-Trial</a></li>
+        </ul>
+      </div>
+
+    </div>
+  <div class="row">
+    <div class="col m3 s12">
+      {{> flowFilter}}
+    </div>
+    <div class="col m9 s12">
+      <div id="stg1" class="col s12"><p>{{>pleading}}</p></div>
+      <div id="stg2" class="col s12"><p>Discovery</p></div>
+      <div id="stg3" class="col s12"><p>Pre Trial</p></div>
+      <div id="stg4" class="col s12"><p>Post Trial</p></div>
+    </div>
+  </div>
+</template>
